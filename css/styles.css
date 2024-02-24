@@ -1,6 +1,16 @@
 /*======== Common styles ======== */
+h1, h2, h3, h4, h5, h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 ul, ol {
 list-style-type: none;
+padding-left: 0;
+margin-top: 0;
+margin-bottom: 0;
+
 }
 a {
     text-decoration: none;
@@ -9,16 +19,48 @@ a {
 button {
     cursor: pointer;
 }
+img {
+    display: block;
+}
 
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background: #fff;
+    width: 1440px;
 }
+
+.container {
+    width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 /*======== /Common styles ======== */
 
 
 /*======== Styles Top Line ======== */
+
+/*.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}*/
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+.heder-top-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    column-gap: 40px;
+}
 .logo {
     font-family: "Raleway", sans-serif;
         font-weight: 700;
@@ -27,6 +69,8 @@ body {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        margin-right: 76px;
+        
 }
 .logo-color {
     font-family: "Raleway", sans-serif;
@@ -37,6 +81,8 @@ body {
         text-transform: uppercase;
         color: #2e2f42;
 }
+
+
 .menu-link,
 .menu-item
 {
@@ -45,6 +91,9 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -52,13 +101,18 @@ body {
 }
 .addres-font-style {
 font-style: normal;
+align-items: center;
+
 }
-.address-link
- {
+.adres-tel {
+display: flex;
+}
+.address-link {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        margin-right: 40px;
 }
 .address-link:hover,
 .address-link:focus
@@ -71,6 +125,14 @@ font-style: normal;
 /*======== Styles hero ======== */
 .styles-hero {
     background: #2e2f42;
+    height: 600px;
+    margin-bottom: 60px;
+}
+.styles-hero-content {
+    padding-top: 188px;
+    padding-left: 472px;
+    padding-right: 472px;
+    padding-bottom: 292px;
 }
 .text-hero {
     font-weight: 700;
@@ -79,9 +141,11 @@ font-style: normal;
     letter-spacing: 0.02em;
     color: #fff;
     text-align: center;
+    max-width: 496px;
 }
 
 .btc-hero {
+    border: none;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -91,6 +155,12 @@ font-style: normal;
 }
 .btc-hero {
     background: #4d5ae5;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
 }
 .btc-hero:hover,
 .btc-hero:focus {
@@ -100,6 +170,15 @@ font-style: normal;
 
 
 /*======== Styles Section1 ======== */
+
+        .section-one-styles {
+           margin-top: 60px;
+           margin-bottom: 60px;
+        }
+        .features-flex {
+            display: flex;
+            column-gap: 24px;
+        }
          .section-one-h {
              font-weight: 500;
              font-size: 20px;
@@ -112,6 +191,7 @@ font-style: normal;
                 line-height: 1.5;
                 letter-spacing: 0.02em;
                 color: #434455;
+                padding-top: 8px;
          }
 /*======== /Styles Section1 ======== */
 
@@ -119,6 +199,9 @@ font-style: normal;
 /*======== Styles Section2 ======== */
          .section-two-fonts {
             background: #f4f4fd;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            height: 732px;
          }
          .section-two-text-h-two {
                 font-weight: 700;
@@ -128,9 +211,13 @@ font-style: normal;
                 text-transform: capitalize;
                 color: #2e2f42;
                 text-align: center;
+                padding-top: 120px;
+                padding-bottom: 72px;
          }
          .section-two-background {
         background:#FFFFFF;
+        display: flex;
+        column-gap: 24px;
          }
          .foto-background {
             background-color: #FFFFFF;
@@ -141,6 +228,8 @@ font-style: normal;
                 line-height: 1.2;
                 letter-spacing: 0.02em;
                 color: #2e2f42;
+                padding-top: 32px;
+                padding-bottom: 8px;
          }
          .text-section-two {
                 font-size: 16px;
@@ -154,6 +243,10 @@ font-style: normal;
 
 
 /*======== Styles Section3 ======== */
+                .section-three-styles {
+                    margin-top: 60px;
+                    margin-bottom: 60px;
+                }
                  .section-three-text-h-two {
                         font-weight: 700;
                         font-size: 36px;
@@ -162,6 +255,14 @@ font-style: normal;
                         text-transform: capitalize;
                         color: #2e2f42;
                         text-align: center;
+                        margin-top: 60px;
+                       
+
+                 }
+                 .section-three-flex {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 38px 24px;
                  }
         
                  .section-three-text-h-three {
@@ -183,6 +284,9 @@ font-style: normal;
 /*======== Styles footer ======== */
                 .footer-background {
                     background: #2e2f42;
+                    height: 312px;
+                    padding-top: 100px;
+                    padding-bottom: 100px;
                 }
                 .logo-footer {
                     font-family: "Raleway", sans-serif;
@@ -207,6 +311,9 @@ font-style: normal;
                         line-height: 1.5;
                         letter-spacing: 0.02em;
                         color: #f4f4fd;
+                        width: 264px;
+                        padding-top: 16px;
+                       
                  }
                
 /*======== /Styles footer ======== */
