@@ -31,9 +31,9 @@ body {
 }
 
 .container {
-    width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     
@@ -44,10 +44,10 @@ body {
 
 /*======== Styles Top Line ======== */
 
-/*.page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}*/
+.page-header {
+    border-bottom: 1px solid #e7e9fc
+}
+
 .page-nav {
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@ body {
 }
 .menu {
     display: flex;
-    column-gap: 40px;
+    /*column-gap: 40px;*/
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -94,6 +94,10 @@ body {
         display: block;
         padding-top: 24px;
         padding-bottom: 24px;
+        margin-right: 40px;
+}
+.last-link {
+margin-right: 0px;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -126,13 +130,12 @@ display: flex;
 .styles-hero {
     background: #2e2f42;
     height: 600px;
-    margin-bottom: 60px;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .styles-hero-content {
-    padding-top: 188px;
-    padding-left: 472px;
-    padding-right: 472px;
-    padding-bottom: 292px;
+  padding-left: 316px;
+    
 }
 .text-hero {
     font-weight: 700;
@@ -145,6 +148,7 @@ display: flex;
 }
 
 .btc-hero {
+    display: block;
     border: none;
     font-family: inherit;
     font-weight: 500;
@@ -171,13 +175,17 @@ display: flex;
 
 /*======== Styles Section1 ======== */
 
+        .invisible {
+           visibility: hidden;
+        }
         .section-one-styles {
-           margin-top: 60px;
-           margin-bottom: 60px;
+           padding-top: 120px;
+           padding-bottom: 120px;
         }
         .features-flex {
             display: flex;
-            column-gap: 24px;
+            gap: 24px;
+            flex-basis: calc((100% - 3 * 24px) / 4)
         }
          .section-one-h {
              font-weight: 500;
@@ -185,13 +193,13 @@ display: flex;
              line-height: 1.2;
              letter-spacing: 0.02em;
              color: #2e2f42;
+             margin-bottom: 8px;
          }
          .text-section-one {
                 font-size: 16px;
                 line-height: 1.5;
                 letter-spacing: 0.02em;
                 color: #434455;
-                padding-top: 8px;
          }
 /*======== /Styles Section1 ======== */
 
@@ -199,8 +207,8 @@ display: flex;
 /*======== Styles Section2 ======== */
          .section-two-fonts {
             background: #f4f4fd;
-            margin-top: 60px;
-            margin-bottom: 60px;
+            padding-top: 120px;
+            padding-bottom: 120px;
             height: 732px;
          }
          .section-two-text-h-two {
@@ -212,30 +220,38 @@ display: flex;
                 color: #2e2f42;
                 text-align: center;
                 padding-top: 120px;
-                padding-bottom: 72px;
+                margin-bottom: 72px;
          }
          .section-two-background {
         background:#FFFFFF;
         display: flex;
-        column-gap: 24px;
+        gap: 24px;
+        
          }
          .foto-background {
             background-color: #FFFFFF;
+            border-radius: 0px 0px 4px 4px;
          }
+         .personal {
+            padding: 32px 0;
+            text-align: center;
+         }
+
          .section-two-text-h-three {
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 1.2;
                 letter-spacing: 0.02em;
                 color: #2e2f42;
-                padding-top: 32px;
-                padding-bottom: 8px;
+                margin-bottom: 8px;
+                text-align: center;
          }
          .text-section-two {
                 font-size: 16px;
                 line-height: 1.5;
                 letter-spacing: 0.02em;
                 color: #434455;
+                text-align: center;
          }
 
 
@@ -244,8 +260,8 @@ display: flex;
 
 /*======== Styles Section3 ======== */
                 .section-three-styles {
-                    margin-top: 60px;
-                    margin-bottom: 60px;
+                   padding-top: 120px;
+                   padding-bottom: 120px;
                 }
                  .section-three-text-h-two {
                         font-weight: 700;
@@ -255,14 +271,21 @@ display: flex;
                         text-transform: capitalize;
                         color: #2e2f42;
                         text-align: center;
-                        margin-top: 60px;
+                        margin-bottom: 72px;
                        
 
                  }
                  .section-three-flex {
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 38px 24px;
+                    row-gap: 48px;
+                    column-gap: 24px;
+                 }
+                 .dodatok {
+                    padding: 32px 16px;
+                    border: 1px solid #e7e9fc;
+                    border-top: none;
+                    margin-bottom: 8px;
                  }
         
                  .section-three-text-h-three {
@@ -296,6 +319,8 @@ display: flex;
                         letter-spacing: 0.03em;
                         text-transform: uppercase;
                         color: #4d5ae5;
+                        display: inline-block;
+                        margin-bottom: 16px;
                 }
                 .logo-color-footer {
                     font-family: "Raleway", sans-serif;
