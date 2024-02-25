@@ -195,10 +195,10 @@ gap: 40px;
         .features-flex {
             display: flex;
             gap: 24px;
-            flex-basis: calc((100% - 3 * 24px) / 4)
+            
         }
         .element-features {
-       
+        flex-basis: calc((100% - 3 * 24px) / 4)
         }
          .section-one-h {
              font-weight: 500;
